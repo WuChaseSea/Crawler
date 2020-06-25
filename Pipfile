@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.douban.com/simple/"
+verify_ssl = false
+
+[dev-packages]
+
+[packages]
+bs4 = "*"
+lxml = "*"
+scrapy = "*"
+pywin32 = "*"
+twisted = "*"
+
+[requires]
+python_version = "3.7"
