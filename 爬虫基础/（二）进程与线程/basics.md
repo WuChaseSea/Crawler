@@ -47,8 +47,12 @@ Pipe常用来在两个进程之间进行通信，其中两个进程分别位于�
 # 协程
 协程（coroutine），又称微线程，纤程，一种用户级的轻量级线程。对于协程来说，拥有自己的寄存器上下文和栈，在协程调用切换时，将寄存器上下文和栈保存到其他地方，在之后切换回来的时候，恢复之前保存的寄存器上下文和栈。也就是说协程能够保留上一次调用的状态。与线程的不同在于线程是系统级别的，由操作系统调度；协程是程序级别的，由程序员在程序中根据需要自行调度。
 * 使用yield实现协程
+测试程序coroutine_yield.py
 * 使用greenlet实现协程
+测试程序coroutine_greenlet.py
 * 使用gevent实现协程
+测试程序coroutine_gevent.py和coroutine_gevent_pool.py
 
 # 分布式进程
 分布式进程是将Process进程分布到多台机器上，充分利用多台机器的性能完成复杂的任务。
+测试程序distributed_manager.py和distributed_worker.py
